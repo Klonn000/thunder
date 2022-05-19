@@ -34,3 +34,85 @@ $(document).ready(function(){
         $('body').toggleClass('lock');
     });
 })
+
+const modalCall = $("[data-modal]");
+const modalClose = $("[data-close]");
+
+
+modalCall.on('click', function(e){
+    e.preventDefault;
+
+    let $this = $(this);
+    let modalId = $this.data('modal');
+
+    $(modalId).addClass('active');
+    $("body").addClass('no-scroll');
+
+    setTimeout(function(){
+        $(modalId).find(".modal_rooms, .modal_basket_wrapper").css({
+            transform: "rotateX(0)"
+        });
+    }, 200)
+
+    $('#worksSlider').slick('setPosition')
+});
+
+modalClose.on('click', function(event){
+    event.preventDefault;
+    let $this = $(this);
+    let modalParent = $this.parents('.modal, .modal_basket');
+
+    modalParent.find(".modal_rooms, .modal_basket_wrapper").css({
+        transform: "rotateX(90deg)"
+    });
+
+    setTimeout(function(){
+        modalParent.removeClass('active');
+        $("body").removeClass('no-scroll');
+    }, 200)
+});
+
+    $(".modal, .modal_basket").on("click", function(event){
+        let $this = $(this);
+        $this.find(".modal_rooms, .modal_basket_wrapper").css({
+            transform: "rotateX(90deg)"
+        });
+
+        setTimeout(function(){
+            $this.removeClass('active');
+            $("body").removeClass('no-scroll');
+        }, 200)
+    });
+    $('.modal_rooms, .modal_basket_wrapper').on("click", function(event){
+        event.stopPropagation();
+    });
+    
+    
+   $('[data-slider="rooms"]').slick({
+       Infinity: true,
+       slidesToShow: 1,
+       slidesToScroll: 1,
+       fade: true,
+       autoplay: true,
+       autoplaySpeed: 500
+   })
+
+   $(".slickPrev").on("click", function(event){
+       event.preventDefault;
+
+       let currentSlider = 
+       $(this).parents('.modal').find('[data-slider="rooms"]');
+
+       currentSlider.slick("slickPrev");
+   });
+
+   $('.slickNext').on("click", function(event){
+        event.preventDefault();
+
+        let currentSlider = 
+       $(this).parents('.modal').find('[data-slider="rooms"]');
+
+       currentSlider.slick("slickNext");
+   })
+
+    

