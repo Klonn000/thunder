@@ -1,7 +1,6 @@
 {
   "name": "kino",
   "version": "1.0.0",
-  "description": "",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,12 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Klonn000/Atlascinema.git"
+    "url": "git+https://github.com/Klonn000/atlascinema.github.io.git"
   },
   "author": "Danya",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Klonn000/Atlascinema/issues"
+    "url": "https://github.com/Klonn000/atlascinema/issues"
   },
-  "homepage": "https://github.com/Klonn000/Atlascinema#readme"
+  "homepage": "https://github.com/Klonn000/atlascinema#readme",
+  "description": ""
 }
