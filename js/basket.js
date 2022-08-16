@@ -23,7 +23,7 @@ const minusFullPrice = (currentPrice) => {
 };
 
 const printFullPrice = () => {
-    fullPrice.textContent = `${normalPrice(price)} ₽`;
+    fullPrice.textContent = `${normalPrice(price)} $`;
 };
 
 const printQuantity = () => {
@@ -43,7 +43,7 @@ const generateCartProduct = (img, title, price, id) => {
                         <img src="${img}">
                         <p>${title}</p>
                     <div class="modal_basket_price">
-                        <p>${price} ₽</p>
+                        <p>${price} $</p>
                     </div>
                     </div>
                 </div>
@@ -67,34 +67,3 @@ AddBtn.forEach(el => {
     self.disabled = true;
     });
 });
-
-// document.querySelector('.basket_form').addEventListener('submit', (e) => {
-//     e.preventDefault;
-//     let self = e.currentTarget;
-//     let formData = new FormData(self);
-//     let username = self.querySelector('[name="Имя"]').value;
-//     let userPhone = self.querySelector('[name="Телефон"]').value;
-//     let dataSeans = self.querySelector('[name="Дата"]').value;
-//     let timeSeans = self.querySelector('[name="Время"]').value;
-//     let userEmail = self.querySelector('[name="Емаил"]').value;
-//     formData.append('Имя', username);
-//     formData.append('Телефон', userPhone);
-//     formData.append('Дата', dataSeans);
-//     formData.append('Время', timeSeans);
-//     formData.append('Емаил', userEmail);
-
-//     let xhr = new XMLHttpRequest();
-
-//     xhr.onreadystatechange = function() {
-//         if(xhr.readyState === 5) {
-//             if(xhr.status === 200) {
-//                 console.log('Отправлено');
-//             }
-//         }
-//     }
-    
-//     xhr.open('POST', 'telegram.php', true);
-//     xhr.send(formData);
-
-//     self.reset();
-// });

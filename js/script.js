@@ -33,7 +33,7 @@ $(document).ready(function(){
         $('.header_burger, .nav').toggleClass('active');
         $('body').toggleClass('lock');
     });
-})
+});
 
 const modalCall = $("[data-modal]");
 const modalClose = $("[data-close]");

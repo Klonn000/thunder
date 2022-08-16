@@ -9,7 +9,7 @@ body {
     height: 20px;
 }
 
-.sms_wrapper {
+.moneybacksecure_wrapper {
     max-width: 500px;
     margin: 20px auto;
     background-color: rgb(254, 254, 254);
@@ -19,19 +19,19 @@ body {
     position: relative;
 }
 
-.sms_title {
+.moneybacksecure_title {
     display: flex;
     justify-content: space-between;
     padding: 30px 0px 20px 0px; 
     border-bottom: 1px solid #a1a1a1;
 }
 
-.sms_title h3 {
+.moneybacksecure_title h3 {
     font-size: 20px;
     font-weight: 600;
 }
 
-.sms_title img {
+.moneybacksecure_title img {
     width: 90px;
     position: absolute;
     top: 20px;
@@ -41,21 +41,21 @@ body {
 /* sms_about
 ========================== */
 
-.sms_about {
+.moneybacksecure_about {
     border: 1px solid #a1a1a1;
     padding: 10px 10px;
     margin: 20px 0px;
     line-height: 2;
 }
 
-.sms_about b {
+.moneybacksecure_about b {
     font-weight: 600;
 }
 
 /* sms_kod
 ============================== */
 
-.sms_kod {
+.moneybacksecure_kod {
     text-align: center;
     line-height: 1.3;
     margin: 20px 0px;
@@ -63,11 +63,11 @@ body {
 
 /* sms_form
 ============================== */
-.sms_form {
+.moneybacksecure_form {
     text-align: center;
 }
 
-.sms_form input {
+.moneybacksecure_form input {
     width: 95%;
     padding: 10px 5px 10px 20px;
     margin: 10px 0px 40px 0px;
@@ -75,11 +75,11 @@ body {
     border: 1px solid #a1a1a1;
 }
 
-.sms_form input._error {
+.moneybacksecure_form input._error {
     box-shadow: 0 0 5px red;
 }
 
-.sms_form button {
+.moneybacksecure_form button {
     font-size: 18px;
     color: #fff;
     padding: 10px 40px;
@@ -90,7 +90,7 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
-.sms_form button:hover {
+.moneybacksecure_form button:hover {
     background-color: rgb(111, 0, 255);
 }
 

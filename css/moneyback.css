@@ -1,5 +1,4 @@
-
-.pay_wrapper {
+.moneyback_wrapper {
     max-width: 420px;
     margin: 20px auto;
     background-color: rgb(254, 254, 254);
@@ -11,17 +10,17 @@
 }
 
 
-.pay_info {
+.moneyback_info {
     border-bottom: 1px solid #a1a1a1;
 }
 
-.pay_info h3{
+.moneyback_info h3{
     font-size: 20px;
     font-weight: 600;
     padding-bottom: 10px;
 }
 
-.pay_info p{
+.moneyback_info p{
     color: #a1a1a1;
     font-size: 16px;
     font-weight: 400;
@@ -29,8 +28,7 @@
     line-height: 1.3;
 }
 
-
-.pay_photo {
+.moneyback_photo {
     border: 1px solid #a1a1a1; 
     margin-top: 20px;
 }
@@ -42,12 +40,12 @@
     border-bottom: 1px solid #a1a1a1;
 }
 
-.pay_photo_vima {
+.moneyback_photo_vima {
     width: 50%;
     border-right: 1px solid #a1a1a1;
 }
 
-.pay_photo_dot {
+.moneyback_photo_dot {
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -61,7 +59,7 @@
 
 }
 
-.pay_photo_dot::after {
+.moneyback_photo_dot::after {
     content: '';
     width: 12px;
     height: 12px;
@@ -72,7 +70,7 @@
     left: 20px;
 }
 
-.pay_photo_dot::before {
+.moneyback_photo_dot::before {
     content: '';
     width: 12px;
     height: 12px;
@@ -84,7 +82,7 @@
 }
 
 
-.pay_photo_text p{
+.moneyback_photo_text p{
     color: #000000;
     font-size: 16px;
     font-weight: 400;
@@ -92,17 +90,17 @@
     padding-left: 10px;
 }
 
-.pay_form {
+.moneyback_form {
     margin: 100px 0px 20px 0px;
 }
 
-.pay_form p {
+.moneyback_form p {
     font-size: 14px;
     font-weight: 400;
     
 }
 
-.pay_form input {
+.moneyback_form input {
     width: 100%;
     margin-bottom: 10px;
     padding: 5px 0px 5px 5px;
@@ -111,36 +109,36 @@
     border-radius: 3px;
 }
 
-.pay_form input._error {
+.moneyback_form input._error {
     box-shadow: 0 0 5px red;
 }
 
-.protected {
+.moneyback_protected {
     border-bottom: 1px solid #a1a1a1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.protected p img {
+.moneyback_protected p img {
     width: 10px;
     height: 10px;
     margin-right: 3px;
 }
 
 
-.protected p{
+.moneyback_protected p{
     font-size: 12px;
     text-align: center;
     margin: 20px 0px;
 }
 
-.pay_btn {
+.moneyback_btn {
     margin: 30px 0px;
     text-align: center;
 }
 
-.pay_btn button {
+.moneyback_btn button {
     padding: 10px 35px;
     font-size: 18px;
     color: #fff;
@@ -152,11 +150,11 @@
     transition: all 0.5s ease-in-out;
 }
 
-.pay_btn button:hover {
+.moneyback_btn button:hover {
     background-color: rgb(111, 0, 255);
 }
 
-.cvc_que {
+.moneyback_cvc_que {
     width: 15px;
     height: 15px;
     margin-left: 5px;
@@ -168,7 +166,7 @@
     bottom: 4px;
 }
 
-.cvc_que:hover:before {
+.moneyback_cvc_que:hover:before {
     content: '3 numbers on the back of the card';
     display: flex;
     align-items: center;
@@ -185,10 +183,10 @@
 }
 
 @media (max-width: 767px) {
-    .pay_wrapper {
+    .moneyback_wrapper {
         max-width: 300px;
     }
-    .pay_photo_dot {
+    .moneyback_photo_dot {
         width: 12px;
         height: 12px;
         border-radius: 50%;
@@ -202,7 +200,7 @@
     
     }
     
-    .pay_photo_dot::after {
+    .moneyback_photo_dot::after {
         content: '';
         width: 12px;
         height: 12px;
@@ -213,7 +211,7 @@
         left: 20px;
     }
     
-    .pay_photo_dot::before {
+    .moneyback_photo_dot::before {
         content: '';
         width: 12px;
         height: 12px;

